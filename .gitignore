@@ -1,0 +1,14 @@
+.idea/
+*.iml
+*.class
+target
+*.log
+/.classpath
+/.launch
+/.project
+/.settings
+/*.launch
+/*.tmproj
+/ivy*
+/eclipse
+*.log
