@@ -4,8 +4,15 @@ spring:
       server:
         git:
           uri: https://github.com/wm-hao/spring-cloud-config
-          search-paths: repos
+          search-paths: /**
+          default-label: master
   application:
-    name: cloud-config-server
+    name: spring-cloud-config-server
 server:
   port: 8000
+eureka:
+  client:
+    service-url:
+       defaultZone: http://localhost:8000/eurake/
+    fetch-registry: false
+    register-with-eureka: false
