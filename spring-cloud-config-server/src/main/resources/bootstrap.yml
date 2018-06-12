@@ -9,10 +9,8 @@ spring:
   application:
     name: spring-cloud-config-server
 server:
-  port: 8000
+  port: 8001
 eureka:
   client:
-    service-url:
-       defaultZone: http://localhost:8000/eurake/
-    fetch-registry: false
-    register-with-eureka: false
+    serviceUrl:
+       defaultZone: http://localhost:8000/eureka/
