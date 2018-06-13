@@ -1,8 +1,8 @@
 spring:
   application:
-    name: spring-cloud-service-consumer-ribbon
+    name: spring-cloud-service-consumer-feign
 server:
-  port: 8004
+  port: 8005
 eureka:
   client:
     service-url:

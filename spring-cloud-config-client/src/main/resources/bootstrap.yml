@@ -8,7 +8,7 @@ spring:
   cloud:
     config:
       discovery:
-        service-id: spring-cloud-config-server
+        service-id: SPRING-CLOUD-CONFIG-SERVER
         enabled: true
       label: master
       profile: dev

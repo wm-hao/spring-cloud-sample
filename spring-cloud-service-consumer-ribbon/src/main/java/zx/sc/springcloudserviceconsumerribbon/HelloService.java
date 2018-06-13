@@ -11,6 +11,8 @@ public class HelloService {
     private RestTemplate restTemplate;
 
     public String helloService(String name) {
-        return restTemplate.getForObject("http://spring-cloud-service-hi?hi")
+        return restTemplate.getForObject("http://SPRING-CLOUD-SERVICE-HI/hi?name=" + name, String.class);
     }
+
 }
+
