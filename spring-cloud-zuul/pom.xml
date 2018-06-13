@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>zx.sc</groupId>
-	<artifactId>spring-cloud-service-consumer-ribbon</artifactId>
+	<artifactId>spring-cloud-zuul</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring-cloud-service-consumer-ribbon</name>
+	<name>spring-cloud-zuul</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -32,23 +32,12 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-ribbon</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-hystrix</artifactId>
+			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
-		</dependency>
-
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -77,6 +66,17 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<!--<repositories>-->
+		<!--<repository>-->
+			<!--<id>spring-milestones</id>-->
+			<!--<name>Spring Milestones</name>-->
+			<!--<url>https://repo.spring.io/milestone</url>-->
+			<!--<snapshots>-->
+				<!--<enabled>false</enabled>-->
+			<!--</snapshots>-->
+		<!--</repository>-->
+	<!--</repositories>-->
 
 
 </project>

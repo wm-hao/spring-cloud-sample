@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(value = "SPRING-CLOUD-SERVICE-HI")
+@FeignClient(value = "SPRING-CLOUD-SERVICE-HI",fallback = HelloErrorServiceImpl.class)
 @Component
 public interface IHelloService {
 
