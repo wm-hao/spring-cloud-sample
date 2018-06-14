@@ -1,0 +1,7 @@
+spring:
+  zipkin:
+    base-url: http://localhost:8007
+  application:
+    name: spring-cloud-service-two
+server:
+  port: 8009
