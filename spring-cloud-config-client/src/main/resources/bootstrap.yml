@@ -12,3 +12,15 @@ spring:
         enabled: true
       label: master
       profile: dev
+    bus:
+      trace:
+        enabled: true
+  rabbitmq:
+    password: guest
+    username: guest
+    host: localhost
+    port: 5672
+management:
+  security:
+    enabled: false
+
